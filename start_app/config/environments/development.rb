@@ -15,3 +15,10 @@ config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
 config.action_mailer.raise_delivery_errors = false
+
+unless ENV['NO_DEBUG']
+  require 'ruby-debug'
+  Debugger.start
+  rc_file = File.join(File.dirname(File.dirname(__FILE__)), 'rdebugrc')
+  Debugger.run_script rc_file if File.exists?(rc_file)
+end
