@@ -20,8 +20,8 @@ development:
   reconnect: false
   database: start_app_development
   pool: 5
-  username: root
-  password:
+  username: metastart
+  password: secret
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -33,8 +33,8 @@ test:
   reconnect: false
   database: start_app_test
   pool: 5
-  username: root
-  password:
+  username: metastart
+  password: secret
   socket: /tmp/mysql.sock
 
 production:
@@ -43,6 +43,6 @@ production:
   reconnect: false
   database: start_app_production
   pool: 5
-  username: root
-  password: 
+  username: metatstart
+  password: secret
   socket: /tmp/mysql.sock
