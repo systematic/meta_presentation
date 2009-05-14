@@ -1,0 +1,15 @@
+<p>
+  <b>Name:</b>
+  <%=h @project.name %>
+</p>
+<p>
+  <% Project.tasks.each do |t| %>
+    <b><%= t %></b> did its thing and said:
+    <b><%=h @project.send(t.to_sym) %></b>
+    <br/>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
