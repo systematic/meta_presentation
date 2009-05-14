@@ -1,3 +1,10 @@
+# A Meta Programming Presentation
+
+Last night (May 13, 2009), I gave a short presentation on meta-programming based on watching some code evolve in a
+project I worked on last year that involved a lot of such shenanigans. Each of the folders in this repository represents
+one phase of the project. Most of the action is in app/models/project.rb and eventually in lib/task_master.rb. Below is
+an description of each phase.
+
 # 01_hardcode_tastic
 
 This is the starting point. It's just a super basic application. The projects show page (i.e. project/1) list the tasks
